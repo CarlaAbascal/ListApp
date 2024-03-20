@@ -15,6 +15,9 @@ public interface GitHub {
     Call<List<Contributor>> contributors(
             @Path("owner") String owner,
             @Path("repo") String repo);
+    @GET("/users/{user}/repos")
+    Call<List<Repos>> repos(
+            @Path("user") String user);
 
 
     Retrofit retrofit = new Retrofit.Builder()

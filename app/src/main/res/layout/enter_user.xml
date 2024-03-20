@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- A RecyclerView with some commonly used attributes -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:elevation="2dp"
+        android:src="@android:drawable/ic_menu_add" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="415dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="268dp"
+        android:onClick="enviarUserClick"
+        android:text="Enviar" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="420dp"
+        android:text="User"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="539dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Escriu el teu usuari"
+        android:textSize="24sp" />
+
+</RelativeLayout>
